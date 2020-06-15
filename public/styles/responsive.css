@@ -1,0 +1,50 @@
+@media(max-width: 900px){
+    /* @media irá aplicar regras especificas*/
+    /* pode ser utilizado para configuração de visualização em smart ou tablet*/
+    #page-home{
+        background-position-x: 70vw;
+    }
+
+    #page-home .content{
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a{
+        position: absolute;
+        bottom: 48px;
+
+        /*joga o elemento para uma porcentagem e vem ajustando para centralizar no eixo x*/
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page-home main{
+        align-items: center;
+    }
+
+    #page-search-results .cards{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 1700px){
+    /*posicionou a imagem fixa até 1700px na horizontal,
+          passou de 1700px a imagem irá se movimentar. 
+          Antes disso a mesma fica estática.*/
+          
+    #page-home{
+        background-position-x: 40vw;
+    }
+}
+
+@media (max-height: 760px){
+    /*posicionou a imagem fixa até 760px na vertical,
+          passou de 760px a imagem irá se movimentar. 
+          Antes disso a mesma fica estática.*/
+    #page-home{
+        
+        background-position-y: 200px;
+    }
+}

@@ -1,0 +1,55 @@
+<!--herda as propriedades do layout.html, para serem usadas aqui-->
+<!-- Depois que herdar, deverá excluir as coisa que tem neste arquivo identicos ao layout.htmls-->
+{% extends "layout.html" %}
+
+{% set pageId = "page-home" %}
+<!--criando uma variavel-->
+
+<!-- vai no arquivo layout.html pega o bloco e preenche com a informação que tem apenas nessa pagina-->
+{% block styles %}
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+{% endblock styles %}
+
+{% block content %}
+
+    <div class="content">
+
+        <header>
+            <!--Elemento que vai colocar um do lado do outro-->
+            <img src="/assets/logo.svg" alt="Logomarca">
+
+            <a href="create-point">
+                <span></span>
+                Cadastre um ponto de Coleta
+            </a>
+
+        </header>
+
+        <main>
+            <!-- infor principal do documento-->
+            <h1>
+                Seu marketplace de coleta de resíduos</h1>
+            <!--title utilizado no server.js-->
+
+            <p>
+                Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
+
+            <a href="#">
+                <span></span>
+                <strong>Pontos de coleta</strong>
+            </a>
+
+        </main>
+
+    </div>
+{% endblock content %}
+
+{% block modal %}
+    <!-- informação estára no arquivo page-header.html, pois como repete em outras paginas padronizamos-->
+    {% include "partials/modal.html"%}
+{% endblock modal %}
+
+{% block scripts %}
+    <script src="/scripts/index.js"></script>
+{% endblock scripts %}

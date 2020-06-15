@@ -1,0 +1,51 @@
+:root{
+    /*atalho para ser replicado para os demais elementos
+    case deseja alterar a cor futuramente apenas trocar neste ponte que irá 
+    replicar para os demais elementos
+    */
+    --title-color: #322153; 
+
+    --primary-color: #34cb79;
+}
+
+*{
+    /* O asterisco * irá referenciar todos os seletores */
+    margin: 0;
+    padding: 0;
+
+    
+    /* colocando o padding para respeitar a largura maxima
+       Desta forma não ultrapassa o maximo permitido de 
+       preenchimento*/
+       box-sizing: border-box;
+
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #f0f0f5;
+    -webkit-font-smoonthing: antialiased;
+}
+
+a{
+    text-decoration: none; /* remove o sublinhado  do link de cada href criado*/  
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color);  /* usa a variavel criada dentro do elemento ROOT*/
+
+
+}
+/*box model
+
+Modelo de caixa
+
+Toda caixa tem largura, altura, espaçamentos, preenchimentos
+borda, cor, fundo e maneira de visualização pelo html (display)
+Alinhamentos.
+
+*/
+

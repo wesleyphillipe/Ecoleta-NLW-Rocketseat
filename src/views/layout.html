@@ -1,0 +1,55 @@
+<!-- criado, com o conteúdo de que mias se repetem nas paginas para ser um layoute padrao-->
+<!--copia o conteudo todo da pagina index, depois elimina registros que não se repetem nas outras páginas.-->
+
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<!--
+
+    Hypertext
+    Markup
+    Language
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--significa que, ao acessar a página e não localizar o blco de title, o sistema irá utlizar esse blco abaixo para o titulo da página-->
+    {% block title %}
+        <title>Ecoleta</title>
+    {% endblock title %}
+    
+
+    <!--
+        Acessa o site https://fonts.google.com/ e adiciona a font que desejar.
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+    <!--Chamada do CSS-->
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <!--criado o bloco para que qndo a pagina for preencher com os elementos apenas dela, estes ficam dentro deste bloco-->
+    {% block styles %}
+    {% endblock styles %}
+    
+
+    <link rel="stylesheet" href="/styles/responsive.css">
+ 
+</head>
+<body>
+   
+    <div id="{{pageId}}">
+
+        {% block content %}
+        {% endblock content %}
+              
+    </div>
+
+    {% block modal %}
+    {% endblock modal %}
+
+    {% block scripts %}
+    {% endblock scripts %}
+     
+</body>
+</html>

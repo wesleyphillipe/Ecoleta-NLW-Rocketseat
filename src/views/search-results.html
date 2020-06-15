@@ -1,0 +1,60 @@
+<!--herda as propriedades do layout.html, para serem usadas aqui-->
+<!-- Depois que herdar, deverá excluir as coisa que tem neste arquivo identicos ao layout.htmls-->
+{% extends "layout.html" %}
+
+<!--criando uma variavel-->
+{% set pageId = "page-search-results" %}
+
+<!-- vai no arquivo layout.html pega o bloco e preenche com a informação que tem apenas nessa pagina-->
+{% block title %}
+    <title>Resultado da Pesquisa</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/search-results.css">
+{% endblock styles %}
+
+{% block content %}
+    <!-- informação estára no arquivo page-header.html, pois como repete em outras paginas padronizamos-->
+    {% include "partials/page-header.html"%}
+
+    <main>
+
+    <!--tratamento para caso não tenha informação na pagina-->
+    {% if total > 0 %}
+
+        <h4>
+            <strong>{{total}} pontos</strong>
+            encontrados
+        </h4>
+
+        <div class="cards">
+
+             <!-- tratamento de repeticao no nunjucs-->
+             <!-- dados dinamicos pegos da tabela criada-->
+            {% for place in places %}
+                <div class="card">
+                    <img src="{{place.image}}" alt="{{place.name}}">
+                    <h1>{{place.name}}</h1>
+                    <h3>{{place.items}}</h3>
+                    <p>
+                        {{place.city}}, {{place.state}}
+                        <br/>
+                        {{place.address2}},
+                        <br/>
+                        {{place.address}},
+                    </p>
+                </div>
+            {% endfor %}
+
+        </div>
+    
+    {%else%}
+    
+        <h4><strong>Nenhum</strong> local encontrado.</h4>
+    
+    {% endif %}
+       
+
+    </main>
+{% endblock content %}
