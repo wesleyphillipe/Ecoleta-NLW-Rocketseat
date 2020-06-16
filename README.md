@@ -10,6 +10,4 @@ Backend: NodeJS + Typescript
 Frontend: ReactJS + Typescript
 Mobile: React Native + Typescript
 
-<h1 align="center">
-    <img alt="" title="" src="imagens/01.PNG">
-</h1>
+![Capa Projeto]()
