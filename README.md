@@ -16,4 +16,14 @@ Frontend: HTMLS / CSS /JavaScript
 
 ![Cadastro Ponto de Coleta](https://github.com/wesleyphillipe/Ecoleta-NLW-Rocketseat/blob/master/images/02.JPG)
 
+![Pesquisa Ponto de Coleta](https://github.com/wesleyphillipe/Ecoleta-NLW-Rocketseat/blob/master/images/04.JPG)
+
+![Localizado Ponto de Coleta](https://github.com/wesleyphillipe/Ecoleta-NLW-Rocketseat/blob/master/images/05.JPG)
+
+![Cadastro Concluído de Ponto de Coleta](https://github.com/wesleyphillipe/Ecoleta-NLW-Rocketseat/blob/master/images/06.jpg)
+
+
+
+
+
 
