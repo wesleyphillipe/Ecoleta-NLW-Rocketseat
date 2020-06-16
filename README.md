@@ -10,4 +10,4 @@ Backend: NodeJS + Typescript
 Frontend: ReactJS + Typescript
 Mobile: React Native + Typescript
 
-![Capa Projeto]()
+![Capa Projeto](https://github.com/wesleyphillipe/Ecoleta-NLW-Rocketseat/blob/master/images/01.JPG)
