@@ -7,6 +7,7 @@ Aplicação web / mobile Ecoleta, onde podemos localizar pontos de coletas de ma
 Desenvolvemos essa aplicação durante a Next Level Week da Rocketseat.
 
 Backend: NodeJS / Banco de Dados SQL (SQLLite)
+
 Frontend: HTMLS / CSS /JavaScript
 
 
