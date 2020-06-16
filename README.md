@@ -28,7 +28,7 @@ Frontend: HTMLS / CSS /JavaScript
 
 2 - Após executado o comando acima, execute o comando npm start na raiz de cada projeto.
 
-# Dúvidas entre em contato pelo <h4 align="center"> <a href="https://www.linkedin.com/in/wesley-phillipe-48a745b1/" target="_blank">Linkedin</a> </h4>
+# Dúvidas entre em contato <h4 align="center"> <a href="https://www.linkedin.com/in/wesley-phillipe-48a745b1/" target="_blank">Linkedin</a> </h4>
 
 
 
